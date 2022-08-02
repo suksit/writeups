@@ -14,7 +14,7 @@ After extracting the `.rar` file, we got a file named `certificate.jpg`. Since w
 
 ![](attachments/20220729161155.png)
 
-So I tried running `steghide` on `certificate.jpg` and found `sherockholmes.txt` file hidden inside the image.
+So I tried running `steghide` on `certificate.jpg` using empty passphrase and found `sherockholmes.txt` file hidden inside the image.
 
 ![](attachments/20220729161234.png)
 
@@ -50,7 +50,7 @@ Looking at these numbers, I thought they may be used to indicate the position of
 
 ![](attachments/20220729163819.png)
 
-After the last revision of the script for easier copy and paste:
+This is the result after the last revision of the script for easier copy and paste:
 
 ![](attachments/20220729165050.png)
 

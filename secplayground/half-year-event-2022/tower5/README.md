@@ -1,6 +1,6 @@
 ![](attachments/20220729170015.png)
 
-So we have a web application running on port 80 and the homepage says this
+It seems we have a web application running on port 80 and the homepage says this
 
 ![](attachments/20220729170135.png)
 
@@ -30,7 +30,7 @@ So I tried a simpler attack by adding a single quote (`'` or `%27`) to the `year
 
 ![](attachments/20220729172640.png)
 
-It also seems the challenge site is not setup the same way as the PoC site e.g. It uses MariaDB instead of PostgreSQL.
+It also seems the challenge site is not setup the same way as the PoC site e.g. It uses MariaDB instead of PostgreSQL. Anyway, we know that we should focus on the `/extract` path and use MySQL syntax for payload.
 
 From now on it was a payload guessing game for a couple of hours until I tried using `UNION` statement like this
 
