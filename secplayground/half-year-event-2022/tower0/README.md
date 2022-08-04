@@ -42,7 +42,7 @@ I pasted it in a file named `message.txt`
 Internationalization  absolute quick access machinations a account fuzzboxes individualistically Telecommunication obfuscation a  Identification space inspiration base an authoritativeness access fuzzy journey climb
 ```
 
-So maybe we can apply the Hint to the above message. I wrote a simple Python script to _"count the number of letters in each word"_ in the message. Here's the result:
+Hmm…, maybe we can apply the Hint to the above message? I wrote a simple Python script to _"count the number of letters in each word"_ in the message. Here's the result:
 
 ![](attachments/20220729163307.png)
 
@@ -68,7 +68,7 @@ import string
 with open("message.txt", "r") as f:
 	lines = f.read()
 	words = lines.split()
-	numbers = [len(x) for x in words]
-	letters = [string.ascii_uppercase[i - 1] for i in numbers]
+	numbers = [len(w) for w in words]
+	letters = [string.ascii_uppercase[n - 1] for n in numbers]
 	print(''.join(letters))
 ```
